@@ -14,9 +14,9 @@ pokemon p = response.Content.ReadFromJsonAsync<pokemon>().Result;
 
 foreach (Parameter param in p.timeseries[0].parameters)
 {
-    if (param.name == "t"){
-    Console.WriteLine(param.value);
-    }
+    // if (param.name == "t"){
+    Console.WriteLine(param.values[0]);
+    // }
 }
 
 
